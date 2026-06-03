@@ -1,0 +1,80 @@
+{
+  "target": "192.168.148.130",
+  "mode": "demo",
+  "findings": [
+    {
+      "port": 21,
+      "service": "vsftpd 2.3.4",
+      "cve": "CVE-2011-2523",
+      "summary_cve": "vsftpd 2.3.4 contains a backdoor that opens a root shell on port 6200 when a username ending in ':)' is supplied.",
+      "impact": "Unauthenticated remote root command execution.",
+      "fix": "Upgrade vsftpd to a vendor-supported release (3.x) or migrate to SFTP. Verify package integrity against official repositories.",
+      "score": 100,
+      "priority": "P1",
+      "sla": "Remediate within 24 hours",
+      "rationale": "severity=critical, exposure=internet, public_exploit=yes"
+    },
+    {
+      "port": 443,
+      "service": "OpenSSL 1.0.1",
+      "cve": "CVE-2014-0160",
+      "summary_cve": "OpenSSL Heartbleed: the TLS heartbeat extension leaks up to 64KB of process memory per request.",
+      "impact": "Disclosure of private keys, session tokens, and credentials.",
+      "fix": "Upgrade OpenSSL to 1.0.1g+, reissue certificates, and rotate any secrets that may have been exposed.",
+      "score": 91.0,
+      "priority": "P1",
+      "sla": "Remediate within 24 hours",
+      "rationale": "severity=high, exposure=internet, public_exploit=yes"
+    },
+    {
+      "port": 80,
+      "service": "Apache httpd 2.2.8",
+      "cve": "CVE-2017-7679",
+      "summary_cve": "Apache httpd mod_mime can read one byte past the end of a buffer when handling a malicious Content-Type response header.",
+      "impact": "Information disclosure / potential denial of service.",
+      "fix": "Upgrade Apache httpd to 2.2.33, 2.4.26, or later.",
+      "score": 70.0,
+      "priority": "P2",
+      "sla": "Remediate within 7 days",
+      "rationale": "severity=high, exposure=internet, public_exploit=no"
+    },
+    {
+      "port": 23,
+      "service": "Linux telnetd",
+      "cve": null,
+      "summary_cve": "No CVE mapped to this finding.",
+      "impact": "Depends on service exposure and configuration.",
+      "fix": "Restrict network exposure, disable if unused, enforce encrypted alternatives, and apply the latest vendor patches.",
+      "score": 70.0,
+      "priority": "P2",
+      "sla": "Remediate within 7 days",
+      "rationale": "severity=high, exposure=internet, public_exploit=no"
+    },
+    {
+      "port": 3306,
+      "service": "MySQL 5.0.51a",
+      "cve": null,
+      "summary_cve": "No CVE mapped to this finding.",
+      "impact": "Depends on service exposure and configuration.",
+      "fix": "Restrict network exposure, disable if unused, enforce encrypted alternatives, and apply the latest vendor patches.",
+      "score": 42.0,
+      "priority": "P3",
+      "sla": "Remediate within 30 days",
+      "rationale": "severity=high, exposure=internal, public_exploit=no"
+    },
+    {
+      "port": 22,
+      "service": "OpenSSH 4.7p1",
+      "cve": null,
+      "summary_cve": "No CVE mapped to this finding.",
+      "impact": "Depends on service exposure and configuration.",
+      "fix": "Restrict network exposure, disable if unused, enforce encrypted alternatives, and apply the latest vendor patches.",
+      "score": 40.0,
+      "priority": "P3",
+      "sla": "Remediate within 30 days",
+      "rationale": "severity=medium, exposure=internet, public_exploit=no"
+    }
+  ],
+  "summary": "2 critical (P1) issue(s) require immediate action, led by vsftpd 2.3.4 (port 21), OpenSSL 1.0.1 (port 443). Prioritize internet-exposed services with known public exploits.",
+  "generated_at": "2026-06-03T22:44:14"
+}

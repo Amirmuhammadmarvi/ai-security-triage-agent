@@ -1,0 +1,2 @@
+# Only needed for live mode (an OpenAI-compatible LLM). Demo mode needs nothing.
+openai>=1.30.0
