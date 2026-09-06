@@ -190,6 +190,6 @@ This tool performs **defensive analysis and remediation guidance only** — it d
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-amirmohammadmarwi.vercel.app-00875A?style=flat-square)](https://amirmohammadmarwi.vercel.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-amir--mohammad--marwi-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/amir-mohammad-marwi)
-[![GitHub](https://img.shields.io/badge/GitHub-Amirmuhammadmarvi-181717?style=flat-square&logo=github)](https://github.com/amirmuhammadmarvi)
+[![GitHub](https://img.shields.io/badge/GitHub-Amirmuhammadmarvi-181717?style=flat-square&logo=github)](https://github.com/Amirmuhammadmarvi)
 
 </div>
